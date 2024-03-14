@@ -41,8 +41,31 @@
     
     // Dans la convention, on écrit les constantes en majuscules pour les reconnaître.
 
-    TEST = "Hello guy" ;
+    //TEST = "Hello guy" ;
     console.log(TEST)
+    // Provoque une erreur : une constante ne peut pas être modifiée.
+
+    var test1 =  10; 
+    var test2 = "10";
+    // console.log(test1);
+    // console.log(test2);
+
+    // var est globale, ce qui signifie qu'elle est accessible dans toute la fonction ou le script où elle est déclarée.
+    // Vous pouvez redéclarer une variable avec var dans le même contexte sans erreur. Cependant, cela peut conduire à des erreurs difficiles à détecter dans votre code en raison de la portée de var.
+
+    let test3 = "Colombbus";
+    //console.log(test3);
+    test3 = "10MentionWeb";
+    console.log(test3);
+
+    // let est locale au bloc dans lequel elle est déclarée, ce qui signifie qu'elle n'est accessible qu'à l'intérieur du bloc (par exemple, une boucle for ou un bloc if).
+        // Vous ne pouvez pas redéclarer une variable avec let dans le même contexte (fonction ou bloc). Vous obtiendrez une erreur  ReferenceError.
+
+
+
+
+
+
 
   </script>  
 </body>
