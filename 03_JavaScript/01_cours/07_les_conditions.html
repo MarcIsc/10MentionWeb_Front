@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les conditions en JS</title>
+</head>
+<body>
+    <script>
+        document.write("<h2>les opérateur de comparaisons pour les structures conditionnelles</h2>")
+        
+        /*
+        >  strictement supérieur
+        <  strictement inférieur
+        >= supérieur ou égale
+        <= inférieur ou égale
+        == pour faire une comparaison de valeur, il permet de vérifier si la valeur de 2 variable sont identitique
+        === pour faire une comparaison de valeur et de son type // signifie "strictement égale à" // Il permet de vérifier la VALEUR ET le TYPE.
+        != différent de, en valeur
+        !== strictement différent de,
+        */
+
+        let nbr1 = 1, nbr2 = 3;
+        document.write(nbr1 > nbr2 + ("<br>"));
+
+        let nbr3 = 2, nbr4 = "2";
+        document.write("<br>");
+        document.write(nbr3 > nbr4 +("<br>"));
+
+
+        document.write("<h2>opérateur logiques </h2>")
+        // les opérateur logiques : 
+
+        /*
+        AND -> &&
+        OR  -> ||
+        NOT -> !
+        */
+
+        // Opérateur AND : Il évalue le résultat en TRUE si les expressions sont TRUE, si l'une des deux expressions testé est fausse alors le résultat sera FALSE
+        document.write("comparatif de deux valeur '\vrai\' ET '\vrai\' " + true && true);
+        document.write("<br>");
+        document.write(true && false);
+        document.write("<br>");
+        document.write(false && false);
+        
+        // Opérateur OR : il évalue le résultat en TRUE si l'une ou deux expression sont TRUE, si les deux expression sont FALSE alors le résultat sera FALSE
+        document.write("<h2>l'opérateur OR  ' || ' </h2>")
+
+        document.write(true || true); // TRUE
+        document.write("<br>");
+        document.write(true || false); // TRUE
+        document.write("<br>");
+        document.write(false || false); // FALSE
+        
+        // Opérateur NOT : Il transforme ce qui est TRUE en FALSE et vise vers ça.
+        document.write("<h2>l'opérateur NOT</h2>")
+
+        document.write(!true); // TRUE
+        document.write("<br>");
+        document.write(!false); // TRUE
+        document.write("<br>");
+        
+        // Syntaxe
+//*************************************************************************
+        // if
+
+        
+        if(condition) {
+            /* le code si la condition est VRAI */
+
+        } else {
+            /* le code si la condition est FAUSSE */
+
+        };
+//************************************************************************
+        // if else 
+        if(condition){
+
+
+        } else if(contition){
+
+
+        };
+
+//*************************************************************************
+
+        // if else  if else
+        if(condition){
+
+
+        }else if(condition){
+
+
+        }else{
+
+
+        };
+        
+    </script>
+</body>
+</html>
